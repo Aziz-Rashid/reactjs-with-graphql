@@ -1,0 +1,76 @@
+@import "../../base";
+
+.hover-profile-container {
+  top: 76px;
+  z-index: 99;
+  right: 50px;
+  position: absolute;
+  padding: 30px;
+  height: 517px;
+  background: #ffffff;
+  box-shadow: 0px 20px 35px #00000026;
+  border-radius: 4px;
+  .top-part {
+    padding-bottom: 25px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eceaf2;
+    display: flex;
+    align-items: center;
+    .profile-image {
+      margin-right: 25px;
+      overflow: hidden;
+      width: 117px;
+      height: 117px;
+      box-shadow: 0px 15px 35px #0000000d;
+      border-radius: 500px;
+      background-position: center;
+    }
+    .right-part {
+      .user-name {
+        margin-bottom: 5px;
+        font-size: 18px;
+        font-weight: $PRIMARY_SEMI_BOLD;
+        color: #28242b;
+      }
+      .dashboard-type {
+        margin-bottom: 5px;
+        font-size: 14px;
+        font-weight: $PRIMARY_SEMI_BOLD;
+        color: #554a73;
+      }
+      .user-email {
+        font-size: 14px;
+        font-weight: $PRIMARY_SEMI_BOLD;
+        color: #aaaac7;
+        margin-bottom: 20px;
+      }
+      .back-to-login-button {
+        cursor: pointer;
+        background: #ffffff;
+        border: 1px solid #eceaf2;
+        border-radius: 2px;
+        padding: 10px 20px;
+        font-weight: $PRIMARY_BOLD;
+        font-size: 14px;
+        color: #aaaac7;
+      }
+    }
+  }
+  .bottom-part {
+    .profile-items {
+      margin-bottom: 25px;
+      .title {
+        font-weight: $PRIMARY_BOLD;
+        font-size: 12px;
+        color: #aaaac7;
+        margin-bottom: 7px;
+        text-transform: uppercase;
+      }
+      .text {
+        font-size: 18px;
+        color: #554a73;
+        font-weight: $PRIMARY_SEMI_BOLD;
+      }
+    }
+  }
+}

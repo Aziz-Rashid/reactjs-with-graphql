@@ -1,0 +1,466 @@
+@import "../../../base";
+.aircraft-style {
+  .category-title {
+    height: 37px;
+    text-align: left;
+    letter-spacing: 0px;
+    color: #28242b;
+    font-size: 28px;
+    font-weight: $PRIMARY_SEMI_BOLD;
+    display: flex;
+    align-items: center;
+  }
+
+  .aircraft-dashboard-container {
+    display: flex;
+    background: #ffffff;
+    box-shadow: 0px 2px 5px #0000001a;
+    border-radius: 4px;
+    margin-top: 20px;
+    padding: 60px;
+    font-size: 14px;
+    font-weight: $PRIMARY_REGULAR;
+    color: #554a73;
+    .line {
+      margin-right: 15px;
+      border: 4px solid #ee5050;
+    }
+    .text-part {
+      width: 70%;
+    }
+  }
+
+  // Table container
+  .table-body-container {
+    background: #ffffff;
+    box-shadow: 0px 2px 5px #0000001a;
+    border-radius: 4px;
+    margin-top: 40px;
+    padding-bottom: 30px;
+    margin-bottom: 50px;
+    .table-body-header {
+      text-align: left;
+      font-size: 18px;
+      font-weight: $PRIMARY_BOLD;
+      letter-spacing: 0px;
+      color: #aaaac7;
+      padding: 22px 30px;
+      border-bottom: 1px solid #eceaf2;
+    }
+  }
+
+  .table-container {
+    padding: 0 30px;
+    .table-header-container {
+      margin-top: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-weight: $PRIMARY_BOLD;
+      font-size: 14px;
+      color: #28242b;
+      .display-record {
+        select {
+          border: 1px solid #eaedf2;
+          border-radius: 2px;
+          padding: 5px 7px;
+          margin: 0 5px;
+        }
+      }
+      .active-switch {
+        display: flex;
+        align-items: center;
+        .input-box-container {
+          margin-left: 10px;
+          margin-bottom: unset;
+          .input-box-title {
+            margin-bottom: unset;
+          }
+        }
+      }
+      .search-bar {
+        input {
+          padding: 10px;
+          margin-left: 10px;
+          border: 1px solid #eaedf2;
+          border-radius: 2px;
+          min-width: 200px;
+          height: 30px;
+        }
+      }
+    }
+    .table-row-container {
+      background: #ffffff;
+      box-shadow: 0px 1px 4px #00000026;
+      border-radius: 4px;
+      margin: 20px 0;
+      .table-row-top {
+        overflow-x: auto;
+        padding: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .items {
+          width: 100%;
+          .title {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            flex-shrink: 1;
+            width: 80%;
+            white-space: nowrap;
+            color: #aaaac7;
+            text-transform: uppercase;
+            font-weight: $PRIMARY_SEMI_BOLD;
+            font-size: 10px;
+            margin-bottom: 5px;
+          }
+          .value {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            flex-shrink: 1;
+            width: 80%;
+            color: #554a73;
+            font-size: 14px;
+            font-weight: $PRIMARY_REGULAR;
+          }
+        }
+        .action {
+          font-size: 23px;
+          flex-shrink: 0;
+          display: flex;
+          width: 30px;
+          align-items: center;
+          justify-content: center;
+          cursor: pointer;
+          color: #aaaac7;
+        }
+      }
+      .table-row-footer {
+        background: #f8f7f9;
+        border-radius: 0px 0px 4px 4px;
+        padding: 10px 30px;
+        color: #aaaac7;
+        font-size: 12px;
+        font-weight: $PRIMARY_REGULAR;
+      }
+    }
+  }
+
+  .print-email-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    .print-button {
+      margin-right: 15px;
+    }
+  }
+
+  .aircraft-form-header {
+    display: flex;
+    padding-top: 29px;
+    cursor: pointer;
+    border-bottom: 1px solid #aaaac7;
+    // padding-bottom: 10px;
+    white-space: nowrap;
+    overflow: auto;
+    div {
+      padding-bottom: 10px;
+      text-transform: uppercase;
+      color: #aaaac7;
+      padding-left: 45px;
+      padding-right: 45px;
+      text-overflow: ellipsis;
+    }
+  }
+
+  .aircraft-form {
+    display: flex;
+    margin: 30px;
+
+    .input-box-container {
+      margin-right: 15px;
+      width: 100%;
+      white-space: nowrap;
+      &:last-child {
+        margin-right: unset;
+      }
+    }
+  }
+
+  .tech-comp-topbtn {
+    display: flex;
+    padding-top: 30px;
+    margin-right: 30px;
+    margin-left: 30px;
+    .items {
+      padding: 12px 16px 12px 17px;
+      border: 1px solid #eceaf2;
+      cursor: pointer;
+      margin-right: 10px;
+    }
+  }
+
+  .tech-comp-setting {
+    margin: 30px;
+    display: flex;
+    margin-bottom: -10px;
+    .index-box {
+      .input-box-container {
+        padding-right: 15px;
+        width: 50px;
+        padding-bottom: -10px;
+      }
+    }
+    .input-box-container {
+      padding-right: 15px;
+      width: 100%;
+      margin-bottom: 0;
+    }
+    .sitting-dropdown {
+      padding-right: 15px;
+      width: 20%;
+    }
+    .number-dropdown {
+      padding-top: 6px;
+      select {
+        border-radius: 50px;
+        width: 111px;
+        height: 40px;
+        position: relative;
+        padding-left: 10px;
+      }
+    }
+  }
+  .tech-comp-input {
+    width: 100%;
+  }
+
+  .second-row-box {
+    .input-box-container {
+      width: 100%;
+      padding-right: 30px;
+      padding-left: 50px;
+    }
+    padding-top: -10px;
+  }
+
+  .non-tech-comp-text {
+    margin: 30px;
+    .input-box-container {
+      width: unset;
+    }
+  }
+
+  .non-tech-comp-dropdown {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 30px;
+    margin-bottom: -40px;
+    margin-right: 30px;
+    .input-box-container {
+      margin-right: 30px;
+      &:last-child {
+        margin-right: unset;
+      }
+    }
+  }
+
+  .result-container {
+    display: flex;
+    justify-content: space-around;
+    margin-right: 30px;
+    .box {
+      border: 1px solid #eaedf2;
+      width: 475px;
+      height: 408px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 30px;
+      .result-icon-style {
+        font-size: 79px;
+        color: #eceaf2;
+        opacity: 1;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 69px;
+      }
+      .box-btn-1 {
+        border: 2px solid #05a677;
+        border-radius: 2px;
+        opacity: 1;
+        width: 288px;
+        height: 58px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+        font-size: 18px;
+        font-weight: bold;
+        letter-spacing: 0px;
+        color: #05a677;
+        opacity: 1;
+      }
+      .box-btn-2 {
+        border: 2px solid #dc3645;
+        border-radius: 2px;
+        opacity: 1;
+        width: 288px;
+        height: 58px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+        font-size: 18px;
+        font-weight: bold;
+        letter-spacing: 0px;
+        color: #dc3645;
+        opacity: 1;
+      }
+    }
+  }
+  .aircraft-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+    .aircraft-submit-btn {
+      display: flex;
+      .submit-button {
+        margin-top: unset;
+        width: 100%;
+      }
+      .preview-button {
+        display: flex;
+        align-items: center;
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+      .pause-button {
+        display: flex;
+        align-items: center;
+        padding-left: 10px;
+        padding-right: 10px;
+        i {
+          padding-right: 7px;
+        }
+        cursor: pointer;
+        width: 100%;
+        padding: 0px 12px;
+        height: 40px;
+        background: #0075ff0d;
+        border: 1px solid #ebac260d;
+        border-radius: 2px;
+        color: #0075ff;
+        font-weight: 700;
+        line-height: 12px;
+        font-size: 14px;
+      }
+    }
+    .discard-btn {
+      .discard-button {
+        i {
+          padding-right: 7px;
+        }
+        cursor: pointer;
+        height: 40px;
+        background: #dc36450d;
+        border: 1px solid #dc36450d;
+        border-radius: 2px;
+        color: #dc3645;
+        font-weight: 700;
+        line-height: 12px;
+        font-size: 14px;
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+    }
+  }
+  @media only screen and (max-width: 1335px) {
+    .tech-comp-topbtn {
+      overflow: auto;
+      white-space: nowrap;
+    }
+    .non-tech-comp-dropdown {
+      display: inline;
+      white-space: nowrap;
+
+      .input-box-container {
+        padding-left: 30px;
+        padding-right: 30px;
+        width: 100%;
+      }
+    }
+  }
+  .add-button {
+    i {
+      padding-right: 7px;
+    }
+    cursor: pointer;
+    width: 152px;
+    padding: 0px 12px;
+    height: 40px;
+    background: #05a6771a;
+    border: 1px solid #05a6771a;
+    border-radius: 2px;
+    color: #05a677;
+    font-weight: 700;
+    line-height: 12px;
+    font-size: 14px;
+  }
+  .add-tech-phase {
+    padding-bottom: 30px;
+    .add-tech-comp {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 27px;
+      padding-bottom: 27px;
+      box-shadow: 0px 1px 0px #eceaf2;
+      h4 {
+        color: #aaaac7;
+      }
+    }
+  }
+  @media only screen and (max-width: 1080px) {
+    .result-container {
+      display: unset;
+    }
+  }
+
+  @media only screen and (max-width: 800px) {
+    .aircraft-buttons {
+      .aircraft-submit-btn {
+        padding-right: 15px;
+        .preview-button {
+          display: unset;
+        }
+        .pause-button {
+          display: unset;
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 1363px) {
+    .aircraft-form-header {
+      overflow: auto;
+    }
+  }
+  @media only screen and (max-width: 1363px) {
+    .result-container {
+      .box {
+        width: 400px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 770px) {
+    .aircraft-form {
+      display: unset;
+      .input-box-container {
+        margin-left: 30px;
+        padding-right: 60px;
+      }
+    }
+  }
+}

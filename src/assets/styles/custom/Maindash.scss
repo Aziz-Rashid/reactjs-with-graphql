@@ -1,0 +1,180 @@
+@import "../base";
+
+.main-dash-container {
+  position: relative;
+  width: 100%;
+  min-height: calc(100vh - 136px);
+  height: 100%;
+  background: #f8f7f9;
+  .main-dash-top {
+    display: flex;
+    align-items: center;
+    background: transparent linear-gradient(180deg, #4a154bcc 0%, #0f040f 100%);
+    height: 237px;
+    padding: 0 30px;
+    .right-container {
+      margin-left: 50%;
+      display: flex;
+      .company-message-line {
+        margin-right: 15.5px;
+        width: 0px;
+        height: 91px;
+        border: 4px solid #ffffff;
+        opacity: 0.16;
+      }
+      .company-message {
+        height: 101px;
+        text-align: left;
+        font-weight: $PRIMARY_REGULAR;
+        font-size: 14px;
+        letter-spacing: 0px;
+        color: #ffffff;
+        opacity: 0.6;
+      }
+    }
+  }
+  .profile-card-container {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    position: absolute;
+    top: 50px;
+    right: calc(50% + 110px);
+    z-index: 99;
+    width: 325px;
+    height: auto;
+    background: #ffffff;
+    box-shadow: 0px 20px 35px #0000000d;
+    border-radius: 4px;
+    .top-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 40px;
+      .profile-container {
+        overflow: hidden;
+        width: 160px;
+        height: 160px;
+        box-shadow: 0px 15px 35px #0000000d;
+        border-radius: 500px;
+        background-position: center;
+      }
+      .user-name {
+        margin-top: 18.39px;
+        letter-spacing: 0px;
+        color: #28242b;
+        font-size: 24px;
+        font-weight: $PRIMARY_SEMI_BOLD;
+      }
+      .logout-container {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        color: #ee5050;
+        font-weight: $PRIMARY_BOLD;
+        font-size: 16px;
+        .fa-power-off {
+          margin-right: 4px;
+        }
+      }
+    }
+    .bottom-container {
+      .profile-items {
+        margin-bottom: 25px;
+        .title {
+          text-transform: uppercase;
+          font-weight: $PRIMARY_BOLD;
+          font-size: 12px;
+          color: #aaaac7;
+          margin-bottom: 8.83px;
+        }
+        .text {
+          font-size: 20px;
+          color: #554a73;
+          font-weight: $PRIMARY_SEMI_BOLD;
+        }
+      }
+    }
+  }
+  .main-dash-bottom {
+    height: 100%;
+    min-height: calc(100vh - 200px);
+    .right-container {
+      margin-left: 50%;
+      .main-title {
+        padding: 38px 0 20px 0;
+        font-weight: $PRIMARY_SEMI_BOLD;
+        font-size: 28px;
+        letter-spacing: 0px;
+        color: #28242b;
+      }
+    }
+    .roles-item-container {
+      display: flex;
+      flex-wrap: wrap;
+      .roles-items {
+        cursor: pointer;
+        margin: 0 24px 24px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 133px;
+        height: 127px;
+        background: #ffffff;
+        box-shadow: 0px 10px 35px #0000000d;
+        border-radius: 4px;
+        .crew {
+          width: 31px;
+          height: 37px;
+          background-image: url("../../images/Subtraction\ 6.svg");
+        }
+        .aircraft {
+          width: 36px;
+          height: 36px;
+          background-image: url("../../images/Group\ 73.svg");
+        }
+        .simulator {
+          width: 43px;
+          height: 36px;
+          background-image: url("../../images/Subtraction\ 13.svg");
+        }
+        .ground {
+          width: 36px;
+          height: 38px;
+          background-image: url("../../images/Union\ 13.svg");
+        }
+        .manager {
+          width: 31px;
+          height: 37px;
+          background-image: url("../../images/Group\ 63.svg");
+        }
+        .optimiser {
+          width: 40px;
+          height: 36px;
+          background-image: url("../../images/Group\ 68.svg");
+        }
+        .data-admin {
+          width: 32px;
+          height: 36px;
+          background-image: url("../../images/Group\ 67.svg");
+        }
+        .title {
+          margin-top: 24px;
+          text-align: left;
+          font-weight: $PRIMARY_BOLD;
+          font-size: 14px;
+          letter-spacing: 0px;
+          color: #28242b;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .profile-card-container {
+    right: calc(50% + 30px) !important;
+  }
+}

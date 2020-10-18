@@ -1,0 +1,124 @@
+@import "../../_vars";
+
+// ::placeholder {
+//   color: #aaaac7 !important;
+//   opacity: 1 !important;
+// }
+
+// ::-webkit-input-placeholder {
+//   /* WebKit, Blink, Edge */
+//   color: #aaaac7 !important;
+//   opacity: 1 !important;
+// }
+// :-moz-placeholder {
+//   /* Mozilla Firefox 4 to 18 */
+//   color: #aaaac7 !important;
+//   opacity: 1 !important;
+// }
+// ::-moz-placeholder {
+//   /* Mozilla Firefox 19+ */
+//   color: #aaaac7 !important;
+//   opacity: 1 !important;
+// }
+// :-ms-input-placeholder {
+//   /* Internet Explorer 10-11 */
+//   color: #aaaac7 !important;
+//   opacity: 1 !important;
+// }
+// ::-ms-input-placeholder {
+//   /* Microsoft Edge */
+//   color: #aaaac7 !important;
+//   opacity: 1 !important;
+// }
+
+.login-container {
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(74, 21, 75, 0.7),
+      rgba(15, 4, 15, 0.9)
+    ),
+    url("../../../images/login-background.png");
+  background-size: cover;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .login-box {
+    width: 45%;
+    height: 100%;
+    background: transparent
+      linear-gradient(180deg, #4a154bcc 0%, #0f040fcc 100%) 0% 0% no-repeat
+      padding-box;
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    .logo {
+      margin-top: 12%;
+    }
+    .login-description {
+      margin-top: 15px;
+      color: #ffffff;
+      opacity: 0.6;
+    }
+    .login-title {
+      color: #ffffff;
+      opacity: 0.95;
+      font-weight: $PRIMARY_SEMI_BOLD;
+      font-size: 28px;
+      position: relative;
+      right: 35%;
+      margin-top: 10%;
+    }
+    .login-input {
+      width: 85%;
+      height: 50px;
+      background: #40223fba 0% 0% no-repeat padding-box;
+      color: #aaaac7 !important;
+      margin-top: 20px;
+      border: none;
+      padding: 10px;
+    }
+    .input-with-tooltip {
+      position: relative;
+      width: 85%;
+      .login-input {
+        width: 100% !important;
+      }
+    }
+    .input-tooltip {
+      position: absolute;
+      top: 37px;
+      right: 24px;
+    }
+    .login-submit {
+      width: 85%;
+      height: 50px;
+      background: #ee5050 0% 0% no-repeat padding-box;
+      border-radius: 2px;
+      opacity: 1;
+      color: white;
+      margin-top: 40px;
+      border: none;
+      font-size: 18px;
+      font-weight: $PRIMARY_BOLD;
+      color: #ffffff;
+      opacity: 1;
+    }
+    .forgot-password {
+      font-size: 14px;
+      color: #aaaac7;
+      margin-top: 22px;
+    }
+    .terms {
+      color: #aaaac7;
+      opacity: 0.6;
+      margin-top: 32px;
+    }
+    .contact {
+      margin-top: 12px;
+    }
+  }
+}

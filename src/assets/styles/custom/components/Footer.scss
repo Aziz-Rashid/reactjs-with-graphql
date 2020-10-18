@@ -1,0 +1,22 @@
+@import "../../base";
+
+.footer-container {
+  border-top: 1px solid #eceaf2;
+  background: #f8f7f9;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+  .footer-items {
+    font-weight: $PRIMARY_REGULAR;
+    font-size: 14px;
+    letter-spacing: 0px;
+    color: #aaaac7;
+    .footer-logo {
+      width: 140px;
+      height: 44px;
+      background: transparent url("../../../images/footer_logo.svg") 0% 0% no-repeat padding-box;
+    }
+  }
+}
